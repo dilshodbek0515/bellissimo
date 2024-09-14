@@ -15,3 +15,20 @@ var swiper = new Swiper(".mySwiper", {
         dynamicBullets: true,
     },
 });
+
+
+
+// N1
+
+// {
+//     function isAllCaps(str) {
+//         return str.toUpperCase() === str;
+//     }
+//     console.log(isAllCaps("c"));
+//     console.log(isAllCaps("C"));
+//     console.log(isAllCaps("hello I AM DONALD"));
+//     console.log(isAllCaps("HELLO I AM DONALD"));
+//     console.log(isAllCaps("ACSKLDFJSgSKLDFJSKLDFJ"));
+//     console.log(isAllCaps("ACSKLDFJSGSKLDFJSKLDFJ"));
+//     console.log(isAllCaps(""));
+// }
