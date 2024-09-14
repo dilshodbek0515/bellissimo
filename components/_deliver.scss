@@ -1,0 +1,126 @@
+.deliver {
+    max-width: 1440px;
+    height: auto;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 8px;
+    margin-top: 10px;
+
+    .sm_content {
+        width: 600px;
+        height: 50px;
+        border-radius: 10px;
+        border: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+        background-color: rgb(223, 223, 223);
+
+        .deliver_btn_sm {
+            width: 290px;
+            height: 45px;
+            border-radius: 50px;
+            border: transparent;
+            background: none;
+            transition: .5s;
+            font-size: 18px;
+            color: black;
+
+            &:hover {
+                background-color: white;
+                transition: .5s;
+            }
+        }
+    }
+
+    .deliver_btn_lg {
+        width: 800px;
+        height: 50px;
+        border-radius: 10px;
+        border: transparent;
+        background-color: rgb(253, 249, 216);
+        color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:1439px) {
+    .deliver {
+        .deliver_btn_lg {
+            max-width: 800px;
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .deliver {
+        .sm_content {
+            max-width: 600px;
+
+            .deliver_btn_sm {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .deliver {
+        flex-direction: column;
+
+        .deliver_btn_lg {
+            max-width: 700px;
+        }
+    }
+}
+
+@media (max-width:730px) {
+    .deliver {
+        .deliver_btn_lg {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width:630px) {
+    .deliver {
+        .sm_content {
+            max-width: 450px;
+
+            .deliver_btn_sm {
+                max-width: 200px;
+            }
+        }
+
+        .deliver_btn_lg {
+            max-width: 450px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .deliver {
+        .sm_content {
+            max-width: 300px;
+
+            .deliver_btn_sm {
+                max-width: 200px;
+            }
+        }
+
+        .deliver_btn_lg {
+            max-width: 300px;
+            font-size: 14px;
+        }
+    }
+}
