@@ -1,0 +1,112 @@
+.kirish {
+    width: 500px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s;
+    display: none;
+    padding: 20px;
+
+    .bi-x-circle {
+        color: red;
+        font-size: 20px;
+        margin-left: 430px;
+        margin-top: 50px !important;
+    }
+
+    .login_text1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+
+        .tell {
+            width: 380px;
+            height: 50px;
+            background-color: rgb(230, 227, 227);
+            border-radius: 10px;
+            border: transparent;
+            outline: none;
+            text-indent: 40px;
+            padding-right: 10px;
+            font-size: 26px;
+        }
+
+        .code_btn {
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: rgb(230, 227, 227);
+            border: transparent;
+            font-size: 20px;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+                color: white;
+                transition: .5s;
+            }
+        }
+    }
+
+    .login_text2 {
+        font-size: 10px;
+        text-align: center;
+        color: gray;
+        margin-top: 50px;
+        max-width: 230px;
+        margin-left: 130px;
+    }
+
+}
+
+@media (max-width:630px) {
+    .kirish {
+        width: 300px;
+        height: 300px;
+
+        .login_text1 {
+            font-size: 20px;
+        }
+
+        .bi-x-circle {
+            margin-left: 250px;
+        }
+
+        form {
+            .tell {
+                width: 250px;
+                font-size: 20px;
+                text-indent: 10px;
+            }
+
+            .code_btn {
+                width: 250px;
+            }
+        }
+
+        .login_text2 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    }
+}

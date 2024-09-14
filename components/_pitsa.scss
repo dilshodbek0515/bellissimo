@@ -28,6 +28,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(.9) translateZ(20px);
+            }
 
             .pitsa_img {
                 width: 100%;
