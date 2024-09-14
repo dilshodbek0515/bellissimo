@@ -1,0 +1,87 @@
+.gazak {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0px 16px;
+
+    .gazak_text {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .gazak_card_content {
+        max-width: 1408px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+        .gazak_card {
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .gazak_img {
+                width: 100%;
+                height: 50%;
+                border-radius: 20px;
+            }
+
+            .gazak_text1 {
+                color: black;
+                font-size: 18px;
+            }
+
+            .gazak_text2 {
+                color: black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+            .gazak_text3 {
+                color: black;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 5px 5px;
+                max-width: 170px;
+                background-color: rgb(216, 212, 212);
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:1270px) {
+    .gazak {
+        .gazak_card_content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .gazak {
+        .gazak_card_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .gazak {
+        .gazak_card_content {
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+    }
+}

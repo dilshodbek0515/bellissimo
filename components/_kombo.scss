@@ -1,0 +1,86 @@
+.combo {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0px 16px;
+
+    .combo_text {
+        color: black;
+        font-size: 20px;
+    }
+
+    .combo_card_content {
+        max-width: 1408px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+        .combo_card {
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .combo_img {
+                width: 100%;
+                height: 50%;
+            }
+
+            .combo_text1,
+            .combo_text3 {
+                color: black;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .combo_text2 {
+                color: black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+            .text_b {
+                margin-top: 60px;
+
+                .combo_del {
+                    font-size: 16px;
+                    color: dimgray;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:1270px) {
+    .combo {
+        .combo_card_content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .combo {
+        .combo_card_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .combo {
+        .combo_card_content {
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+    }
+}

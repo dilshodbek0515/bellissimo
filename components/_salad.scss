@@ -1,0 +1,73 @@
+.salad {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0px 16px;
+
+    .salad_text {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .salad_card_content {
+        max-width: 1408px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+        .salad_card {
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .salad_img {
+                width: 100%;
+                height: 60%;
+                border-radius: 20px;
+            }
+
+            .salad1 {
+                color: black;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .salad3 {
+                color: black;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 5px 5px;
+                max-width: 170px;
+                background-color: rgb(216, 212, 212);
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:1270px) {
+    .salad {
+        .salad_card_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .salad {
+        .salad_card_content {
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+    }
+}
